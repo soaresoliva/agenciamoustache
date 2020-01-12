@@ -236,65 +236,49 @@ body{
 	font-weight: 700;
 }
 
+.carousel-mavigator{
+	text-align: center;
+	padding: 40px 0 0 0;
+}
 
-.conteudo-block .owl-nav .owl-prev, 
-.conteudo-block .owl-nav .owl-next{
-	background: #fff;
-    border: 1px solid #5b5b5f !important;
-    font-size: 14px;
-    width: 36px;
+.carousel-mavigator .seta{
+	display: inline-block;
+	color: #9f9c9c;
+	border: 1px solid #5b5b5f;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial;
+	width: 36px;
     height: 36px;
     line-height: 36px;
     text-align: center;
-    position: absolute;
-    top: 95%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #9f9c9c;
-    opacity: 1;
-    visibility: visible;
-    border-radius: 0 !important;
 }
 
-.conteudo-block .owl-nav .owl-prev:hover, 
-.conteudo-block .owl-nav .owl-next:hover{
-	background-color: #434040 !important;
+.carousel-mavigator .seta:hover{
+	text-decoration: none;
+	background-color: #434040;
+	color: #ffffff;
 }
 
-
-.conteudo-block .owl-nav .owl-prev{
-	left: 36%;
+.carousel-mavigator .prevSlider{
+	margin-right: 10px;
 }
 
+.carousel-mavigator .nextSlider{
+	margin-left: 10px;
+}
 
-.conteudo-block .owl-theme .owl-dots .owl-dot span{
-	border-radius: 0px;
+.carousel-mavigator .dots span{
+	display: inline-block;
+	margin: 0 10px;
 	width: 53px;
 	height: 12px;
 	background-color: #d0cfcf;
+	cursor: pointer;
 }
 
-.conteudo-block .owl-theme .owl-dots .owl-dot.active span, 
-.conteudo-block .owl-theme .owl-dots .owl-dot:hover span{
+.carousel-mavigator .dots span.active{
 	background-color: #434040;
-
-}
-
-
-.conteudo-block .owl-nav .owl-next{
-	right: 36%;
-}
-
-
-.conteudo-block .owl-theme .owl-nav{
-	margin-top: 20px;
-}
-
-
-.conteudo-block .owl-theme .owl-dots{
-	padding-top: 25px;
 }
 
 
@@ -416,26 +400,12 @@ body{
 
 
 /****  RESPONSIVO  ***/ 
-
-@media only screen and (max-width: 1200px) {
-	.conteudo-block .owl-nav .owl-prev{
-		left: 31%;
-	}
-
-	.conteudo-block .owl-nav .owl-next{
-		right: 31%;
-	}
-}
-
-@media only screen and (max-width: 998px) {
-	.conteudo-block .owl-nav .owl-prev{
-		display: none;
-	}
-
-	.conteudo-block .owl-nav .owl-next{
+@media only screen and (max-width: 990px) {
+	#dotsCarousel{
 		display: none;
 	}
 }
+
 
 @media only screen and (max-width: 768px) {
 
@@ -512,6 +482,7 @@ body{
 	.banner-block .img-fluid{
 		max-width: 84%;
 	}
+
 
 	.rodape{
 		margin-top: 50px;
