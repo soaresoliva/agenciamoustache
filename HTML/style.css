@@ -7,6 +7,10 @@ body{
 	display: none;
 }
 
+.collapse:not(.show){
+	display: block ;
+}
+
 .hover-zoom{
 	transform: scale(1);
     -ms-transform: scale(1);
@@ -435,6 +439,10 @@ body{
 
 @media only screen and (max-width: 768px) {
 
+	.collapse:not(.show){
+		display: none; ;
+	}
+
 	.btn-menu-mobile{
 		display: inline-block;
 		float: right;
@@ -442,8 +450,13 @@ body{
 		color: #fff;
 	}
 
+	.btn-menu-mobile:visited,
+	.btn-menu-mobile:active,
+	.btn-link:hover{
+		color: #fff;
+	}
+
 	.main-header .main-menu{
-		display: none;
 		position: absolute;
 	    width: 100%;
 	    background: #000000;
@@ -451,6 +464,7 @@ body{
 	    top: 44px;
 	    padding-bottom: 0;
 	}
+
 
 	.main-header .main-menu ul li{
 		display: block;

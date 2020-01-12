@@ -38,7 +38,7 @@
 				<button class="btn btn-link btn-menu-mobile d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target=".main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Mostrar menu"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
 				</button>
 
-				<nav class="main-menu">
+				<nav class="main-menu  collapse">
 					<ul class="nav-main">
 						<li class="current-menu-item">
 							<a href="#home">Home</a>
@@ -361,20 +361,20 @@
 								</div>
 
 								<div class="form-group">
-									<input type="mail" class="form-control" name="Email" placeholder="Seu E-mail" required="required">
+									<input type="email" class="form-control" name="Email" placeholder="Seu E-mail" required="required">
 								</div>
 
 								<div class="form-group">
-									<input type="text" class="form-control" name="Telefone" placeholder="Seu Telefone" required="required">
+									<input type="text" class="form-control fone-mask" name="Telefone" placeholder="Seu Telefone" required="required">
 								</div>
 
 								<div class="form-group">
-									<input type="text" class="form-control" name="Nascimento" placeholder="Data de Nascimento" required="required">
+									<input type="text" class="form-control date-mask" name="Nascimento" placeholder="Data de Nascimento" required="required">
 								</div>
 							</div>
 							<div class="col-12 col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" name="CEP" placeholder="CEP" required="required">
+									<input type="text" class="form-control cep-mask" name="CEP" placeholder="CEP" required="required">
 								</div>
 
 								<div class="row">
@@ -491,6 +491,7 @@
 <script type="text/javascript" src="js/aos.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
