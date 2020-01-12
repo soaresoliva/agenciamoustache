@@ -7,68 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="" />
 	<title>Teste: Agência Moustache</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+	<link href="css/aos.css" rel="stylesheet" />
+	<link href="css/owl.carousel.min.css" rel="stylesheet" />
+	<link href="css/owl.theme.default.min.css" rel="stylesheet" />
+
+	<link href="style.css" rel="stylesheet" />
 </head>
 <body>
+
 <h1 class="title-seo">Teste: Agência Moustache</h1>
 
 <!--  HEADER -->
 <header class="main-header">
 	<div class="container">
 		<div class="row">
-			<div class="col-2 col-md-1">
-				<a href="#" title="Link: Home - Agência Moustache"><img src="" alt="Agência Moustache" title="Agência Moustache"></a>
-			</div>
+			<div class="col-12">
+				<a href="#" title="Link: Home - Agência Moustache"><img src="img/logo.png" alt="Agência Moustache" title="Agência Moustache" class="img-logo"></a>
+				<div class="search-box">
+					<form>
+						<input type="search" name="" required="required" class="input-buscar" placeholder="Buscar">
+						<input type="image" src="img/ico_search.png" name="" alt="Enviar" class="btn-buscar">
+					</form>
+				</div>
 
-			<div class="col-8 col-md-8">
+				<button class="btn btn-link btn-menu-mobile d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target=".main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Mostrar menu"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+				</button>
+
 				<nav class="main-menu">
-					<ul>
-						<li>
-							<a href="#">Home</a>
+					<ul class="nav-main">
+						<li class="current-menu-item">
+							<a href="#home">Home</a>
 						</li>
 						<li>
-							<a href="#">Menu 2</a>
+							<a href="#conteudointerno">Conteúdo Interno</a>
 						</li>
 						<li>
-							<a href="#">Menu 3</a>
+							<a href="#faleconosco">Fale Conosco</a>
 						</li>
 					</ul>
-				</nav>
-			</div>
 
-			<div class="col-2 col-md-3">
-				<div class="search-box">
-					<input type="text" name="">
-					<input type="image" name="" alt="Enviar">
-				</div>
+					<p class="close-menu text-center"><a href="#">X FECHAR</a></p>
+				</nav>
 			</div>
 		</div>
 	</div>
 </header>
 <!--  END HEADER -->
 
-<main class="main-content">
+<main class="main-content" id="home">
 
 	<!--  BANNER -->
 	<section class="section-block banner-block">
-		
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+
+					<div class="slogan-content">
+						<figure data-aos="fade-right">
+							<img src="img/slogan_01.png" class="s1 img-fluid" alt="" title="Sua próxima agência" />
+						</figure>
+
+						<figure data-aos="fade-left">
+							<img src="img/slogan_02.png" class="s2 img-fluid" alt="" title="seu próximo resultado." />
+						</figure>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- END BANNER -->
 
 
 	<!-- CONTEUDO INTERNO -->
-	<section class="section-block conteudo-block">
+	<section class="section-block conteudo-block" id="conteudointerno">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="section-title">
-						<h2>Conteúdo Interno</h2>
+					<div class="section-title" data-aos="fade-up">
+						<h2 class="text-center">Conteúdo Interno</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
 
-					<div class="owl-carousel owl-theme">
+					<div class="owl-carousel owl-theme"  >
 
 						<!--  CAROUSEL ITEM -->
 						<div class="item">
@@ -78,21 +107,230 @@
 								</span>
 
 								<figure class="card-image">
-									<img src="" alt="" title="" class="img-fluid">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
 								</figure>
 
-								<h3 class="card-title">
-									<a href="#">Lorem ipsum dolor sit</a>
-								</h3>
+								<div class="card-body">
 
-								<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
 
-								<a href="#" class="btn btn-default card-link">Link Externo</a>
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
 							</div>
 						</div>
 						<!--  END CAROUSEL ITEM -->
-					</div>
 
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 2</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 3</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 1</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 2</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 3</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 1</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 2</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+
+						<!--  CAROUSEL ITEM -->
+						<div class="item">
+							<div class="card-box">
+								<span class="card-category">
+									<a href="#">Categoria 3</a>
+								</span>
+
+								<figure class="card-image">
+									<img src="img/card.jpg" alt="" title="" class="img-fluid">
+								</figure>
+
+								<div class="card-body">
+
+									<h3 class="card-title">
+										<a href="#">Lorem ipsum dolor sit</a>
+									</h3>
+
+									<p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+									<a href="#" class="btn card-link hover-zoom">Link Externo</a>
+								</div>
+							</div>
+						</div>
+						<!--  END CAROUSEL ITEM -->
+
+					</div>
+					<a ></a>
 				</div>
 			</div>
 		</div>
@@ -100,13 +338,13 @@
 	<!-- END CONTEUDO INTERNO -->
 
 	<!-- FORMULARIO -->
-	<section class="section-block form-block">
+	<section class="section-block form-block"  id="faleconosco" >
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 
-					<div class="section-title">
-						<h2>Fale Conosco</h2>
+					<div class="section-title" data-aos="fade-up">
+						<h2 class="text-center">Fale Conosco</h2>
 					</div>
 
 				</div>
@@ -114,69 +352,71 @@
 
 			<div class="row">
 				<div class="col-12">
+					<div class="form-content" data-aos="fade-up">
 					<form>
 						<div class="row">
 							<div class="col-12 col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" name="Nome" placeholder="Seu Nome">
+									<input type="text" class="form-control" name="Nome" placeholder="Seu Nome" required="required">
 								</div>
 
 								<div class="form-group">
-									<input type="text" class="form-control" name="Email" placeholder="Seu E-mail">
+									<input type="mail" class="form-control" name="Email" placeholder="Seu E-mail" required="required">
 								</div>
 
 								<div class="form-group">
-									<input type="text" class="form-control" name="Telefone" placeholder="Seu Telefone">
+									<input type="text" class="form-control" name="Telefone" placeholder="Seu Telefone" required="required">
 								</div>
 
 								<div class="form-group">
-									<input type="text" class="form-control" name="Nascimento" placeholder="Data de Nascimento">
+									<input type="text" class="form-control" name="Nascimento" placeholder="Data de Nascimento" required="required">
 								</div>
 							</div>
 							<div class="col-12 col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" name="CEP" placeholder="CEP">
+									<input type="text" class="form-control" name="CEP" placeholder="CEP" required="required">
 								</div>
 
 								<div class="row">
-									<div class="col-9">
+									<div class="col-8">
 										<div class="form-group">
-											<input type="text" class="form-control" name="Endereco" placeholder="Endereço">
+											<input type="text" class="form-control" name="Endereco" placeholder="Endereço" required="required">
 										</div>
 									</div>
 
-									<div class="col-3">
+									<div class="col-4">
 										<div class="form-group">
-											<input type="text" class="form-control" name="Numero" placeholder="Número">
+											<input type="text" class="form-control" name="Numero" placeholder="Número" required="required">
 										</div>
 									</div>
 								</div>
 
 								<div class="form-group">
-									<input type="text" class="form-control" name="Bairro" placeholder="Bairro">
+									<input type="text" class="form-control" name="Bairro" placeholder="Bairro" required="required">
 								</div>
 
 								<div class="row">
-									<div class="col-9">
+									<div class="col-8">
 										<div class="form-group">
-											<input type="text" class="form-control" name="Cidade" placeholder="Cidade">
+											<input type="text" class="form-control" name="Cidade" placeholder="Cidade" required="required">
 										</div>
 									</div>
 
-									<div class="col-3">
+									<div class="col-4">
 										<div class="form-group">
-											<input type="text" class="form-control" name="Bairro" placeholder="Bairro">
+											<input type="text" class="form-control" name="Estado" placeholder="Estado" required="required">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-12 text-center">
-								<input type="submit" name="" value="Enviar Dados" class="btn-enviar">
+							<div class="col-12 text-center py-3">
+								<input type="submit" name="" value="Enviar Dados" class="btn-enviar hover-zoom">
 							</div>
 						</div>
 					</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -185,15 +425,38 @@
 
 </main>
 
-<footer class="main-footer">
+<footer class="main-footer" >
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-4">
-				<div class="footer-item">
+				<div class="footer-item widget">
 					<h4>Lorem Ipsum Dolor Sit</h4>
 					<span class="divisa"></span>
 					<div>
-						<img src="" alt="" class="flag">
+						<img src="img/floag-br.jpg" alt="" class="flag">
+						<p>Lorem ipsum dolo sit, 10 Lorem ipsum dolor sit, CEP: 0000000</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-4">
+				<div class="footer-item widget">
+					<h4>Lorem Ipsum Dolor Sit</h4>
+					<span class="divisa"></span>
+					<div>
+						<img src="img/floag-br.jpg" alt="" class="flag">
+						<p>Lorem ipsum dolo sit, 10 Lorem ipsum dolor sit, CEP: 0000000</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-12 col-md-4">
+				<div class="footer-item widget">
+					<h4>Lorem Ipsum Dolor Sit</h4>
+					<span class="divisa"></span>
+					<div>
+						<img src="img/flag-eua.jpg" alt="" class="flag">
 						<p>Lorem ipsum dolo sit, 10 Lorem ipsum dolor sit, CEP: 0000000</p>
 					</div>
 				</div>
@@ -204,15 +467,15 @@
 	<div class="rodape">
 		<div class="container-fluid ">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<p class="footer-copyright">Copyright Agência Moustache LTDA. Todos os direitos reservados</p>
 				</div>
 
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<nav class="nav-footer">
 						<ul>
 							<li><a href="#">Link Externo 1</a></li>
-							<li><a href="#">Link Externo 1</a></li>
+							<li><a href="#">Link Externo 2</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -220,5 +483,14 @@
 		</div>
 	</div>
 </footer>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/aos.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
