@@ -177,12 +177,6 @@ var home = {
 			
 		});
 
-
-		$(".input-buscar").blur(function(){ 
-			$(this).val('');
-			$(".result-search ").hide();
-			$( ".result-search .result-search-content" ).html('');
-		});
 	}
 }
 
