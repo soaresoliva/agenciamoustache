@@ -11,8 +11,8 @@ if ( $query->have_posts() ) {
 ?>
 		<div class="row">
 			<div class="col-12 col-md-10">
-				<h4><a href="<?php echo $link; ?>"><?php echo get_the_title(); ?></a></h4>
-				<p><a href="<?php echo $link; ?>"><?php echo wp_strip_all_tags( get_the_excerpt(), true ); ?></a></p>
+				<h4><a href="<?php echo $link; ?>" target="_blank"><?php echo get_the_title(); ?></a></h4>
+				<p><a href="<?php echo $link; ?>" target="_blank"><?php echo wp_strip_all_tags( get_the_excerpt(), true ); ?></a></p>
 				<hr />
 			</div>
 		</div>

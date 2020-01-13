@@ -118,6 +118,7 @@ body{
 	max-height: 250px;
 	overflow-y: auto;
 	overflow-x: hidden;
+	z-index: 999;
 }
 
 .main-header .result-search .result-search-content{
