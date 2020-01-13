@@ -153,7 +153,7 @@ var home = {
 	},
 
 	Buscar: function(){ 
-		$(".input-buscar").keypress(function(){ 
+		$(".input-buscar").keyup(function(){ 
 			var _value = $(this).val();
 			if(_value != "")
 			{
