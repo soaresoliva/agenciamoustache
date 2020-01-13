@@ -177,6 +177,29 @@ var home = {
 			
 		});
 
+		$(".btn-buscar").click(function(){ 
+			var _value = $(".input-buscar").val();
+			if(_value != "")
+			{
+				var _url = $(".input-buscar").data('url');
+				$(".result-search ").show();
+
+				$.get( _url, { s: _value }, function( data ) {
+				  $( ".result-search .result-search-content" ).html( data );
+
+				  $(".close-search").on("click", function(){ 
+				  		$(".input-buscar").val('');
+						$(".result-search ").hide();
+						$( ".result-search .result-search-content" ).html('');
+					});
+				});
+			}
+			else{
+				$(".result-search ").hide();
+				$( ".result-search .result-search-content" ).html('');
+			}
+		});
+
 
 		$(".input-buscar").blur(function(){ 
 			$(this).val('');
